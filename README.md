@@ -68,6 +68,6 @@ WarmPaws is a pet care and services website. Here, various products for pets are
 
 <h2>Live & Relevant Links</h2>
 <ul>
-  <li>🌐 <a href="https://warm-wrampaws-7700.netlify.app/" target="_blank">https://warm-wrampaws-7700.netlify.app/</a></li>
-  <li>💻 <a href="https://github.com/mehedihasan770/wrampaws-web.git" target="_blank">https://github.com/mehedihasan770/wrampaws-web.git</a></li>
+  <li>🌐Live Link <a href="https://warm-wrampaws-7700.netlify.app/" target="_blank">https://warm-wrampaws-7700.netlify.app/</a></li>
+  <li>💻Github Repo Link <a href="https://github.com/mehedihasan770/wrampaws-web.git" target="_blank">https://github.com/mehedihasan770/wrampaws-web.git</a></li>
 </ul>
