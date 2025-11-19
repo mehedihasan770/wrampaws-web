@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "title": "Dress Them in Warm Clothing",
+    "description": "During winter, pets—especially short-haired breeds—can struggle to stay warm. Dressing them in soft sweaters, insulated jackets, or cozy blankets helps regulate their body temperature and prevents cold-related stress. Choose breathable fabrics that don’t restrict movement and ensure a snug but comfortable fit.",
+    "icon": "🧥"
+  },
+  {
+    "id": 2,
+    "title": "Provide a Soft and Warm Bed",
+    "description": "Cold floors can be harsh on your pet’s joints and overall comfort. Provide a soft, padded bed with thermal insulation in a quiet, draft-free corner of your home. Elevated beds or heated pads can offer extra warmth, especially for senior pets or those with arthritis.",
+    "icon": "🛏️"
+  },
+  {
+    "id": 3,
+    "title": "Take Care of Their Paws",
+    "description": "In winter, icy sidewalks and cold surfaces can cause dryness, cracking, or even frostbite on your pet’s paws. After walks, gently clean their feet to remove ice, salt, or chemicals, and apply a pet-safe balm to keep the pads moisturized and protected. Consider using booties for added safety.",
+    "icon": "🐾"
+  },
+  {
+    "id": 5,
+    "title": "Limit Outdoor Time",
+    "description": "While fresh air is important, prolonged exposure to cold temperatures can be dangerous for pets. Limit outdoor activities during early mornings and late evenings when it’s coldest. Keep walks short and monitor for signs of discomfort like shivering or lifting paws off the ground.",
+    "icon": "🏠"
+  },
+  {
+    "id": 6,
+    "title": "Keep Them Dry",
+    "description": "Wet fur loses its insulating ability and can make pets feel colder faster. After outdoor walks or playtime, dry your pet thoroughly using a towel or pet-safe dryer. Pay special attention to their belly, paws, and ears. Keeping them dry helps prevent chills and skin irritation.",
+    "icon": "🧼"
+  },
+  {
+    "id": 7,
+    "title": "Watch for Signs of Hypothermia",
+    "description": "Hypothermia in pets can develop quickly in cold weather. Warning signs include shivering, lethargy, cold ears or paws, and pale gums. If you notice these symptoms, bring your pet indoors immediately, wrap them in a warm blanket, and contact your vet. Early action can save lives.",
+    "icon": "⚠️"
+  }
+]
+

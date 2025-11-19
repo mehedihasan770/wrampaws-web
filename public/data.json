@@ -1,0 +1,74 @@
+[
+  {
+    "serviceId": 1,
+    "serviceName": "Winter Coat Fitting for Dogs",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 25,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
+    "image": "https://i.ibb.co/5Xy7DQS4/a-dog-wearing-a-coat-outside-in-the-snow.jpg",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 2,
+    "serviceName": "Winter Grooming & Paw Treatment",
+    "providerName": "CozyPets Grooming",
+    "providerEmail": "hello@cozypets.com",
+    "price": 30,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
+    "image": "https://i.ibb.co/9mzcQDJB/147274169-dachshund-dog-posing-outdoors-in-a-red-jacket.jpg",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 3,
+    "serviceName": "Dog Spa & Massage Session",
+    "providerName": "PawRelax Hub",
+    "providerEmail": "relax@pawhub.com",
+    "price": 40,
+    "rating": 4.7,
+    "slotsAvailable": 5,
+    "description": "A full-body massage and spa treatment for your dog to reduce stress and promote relaxation.",
+    "image": "https://i.ibb.co/QF394bFV/174995778-chihuahua-dog-walks-in-winter-puppy-in-a-jacket-in-the-snow-dog-in-a-winter-jacket.jpg",
+    "category": "Wellness"
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Puppy Training & Behavior Session",
+    "providerName": "SmartPup Academy",
+    "providerEmail": "train@smartpup.com",
+    "price": 35,
+    "rating": 4.6,
+    "slotsAvailable": 6,
+    "description": "Basic obedience, socialization, and winter-specific indoor behavior training for puppies.",
+    "image": "https://i.ibb.co/99KKmDZS/abb756cb-1254-4a11-b6b3-c4f89d3a13f6-5148adacb0b50413e65ef76680db1d33.webp",
+    "category": "Training"
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Pet Photography — Winter Edition",
+    "providerName": "FurryFrames Studio",
+    "providerEmail": "photo@furryframes.com",
+    "price": 45,
+    "rating": 4.9,
+    "slotsAvailable": 2,
+    "description": "Capture adorable winter moments of your pet with cozy themes and professional lighting.",
+    "image": "https://i.ibb.co/LDxMXBc9/stock-photo-portrait-dog-knitted-scarf-tied-neck-snowy-winter-theme-pets.webp",
+    "category": "Photography"
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Dog Health Check & Nutrition Plan",
+    "providerName": "VetPlus Care",
+    "providerEmail": "support@vetplus.com",
+    "price": 50,
+    "rating": 5.0,
+    "slotsAvailable": 4,
+    "description": "Comprehensive health checkup and personalized diet plan for your dog’s winter needs.",
+    "image": "https://i.ibb.co/Wvjcr6bJ/depositphotos-752869414-stock-photo-beautiful-golden-retriever-dog-wearing.webp",
+    "category": "Healthcare"
+  }
+]
