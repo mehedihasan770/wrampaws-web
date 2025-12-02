@@ -75,8 +75,8 @@ const Login = () => {
 
               {error && <p className="text-red-600">{error}</p>}
 
-              <button className="btn btn-neutral mt-4">Login</button>
-              <button onClick={handleGoogleSignIn} type='button' className="btn"><FcGoogle size={30}/>Login with Google</button>
+              <button className="btn bg-[#422AD5] text-white rounded-2xl hover:bg-purple-700 mt-4">Login</button>
+              <button onClick={handleGoogleSignIn} type='button' className="btn rounded-2xl"><FcGoogle size={30}/>Login with Google</button>
 
               <h2 className="font-semibold pt-3">
                   Dont’t Have An Account ?{" "}

@@ -28,7 +28,7 @@ const ForgetPass = () => {
 
   return (
     <div>
-        <header>
+        <header className='sticky top-2 z-50'>
             <Navbar></Navbar>
         </header>
     <div>
@@ -51,8 +51,8 @@ const ForgetPass = () => {
                   placeholder="Email"
                 />
                 <div className="flex space-x-2">
-                  <Link className="btn btn-neutral mt-4 w-[25%]" to={'/auth/login'}><button>Back</button></Link>
-                  <button className="btn btn-neutral mt-4 w-[75%]">Reset Password</button>
+                  <Link className="btn mt-4 w-[25%] rounded-2xl bg-[#422AD5] text-white hover:bg-purple-700" to={'/auth/login'}><button>Back</button></Link>
+                  <button className="btn mt-4 w-[75%] rounded-2xl bg-[#422AD5] text-white hover:bg-purple-700">Reset Password</button>
                 </div>
               </fieldset>
             </form>

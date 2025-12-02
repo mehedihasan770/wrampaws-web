@@ -15,12 +15,12 @@ const Services = () => {
 
     return (
         <div>
-            <header>
+            <header className='sticky top-2 z-50'>
                 <Navbar></Navbar>
             </header>
-                <main className='max-w-11/12 mx-auto'>
-                    <h1 className='text-center font-bold md:text-3xl mt-10'>All Winter Care Services</h1>
-                    <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+                <main className='max-w-10/12 mx-auto'>
+                    <h1 className='text-center font-bold md:text-3xl my-10'>All Winter Care Services</h1>
+                    <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
                         {
                             data.map(cats => <Cards key={cats.serviceId} cats={cats} ></Cards>)
                         }

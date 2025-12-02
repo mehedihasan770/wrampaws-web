@@ -90,8 +90,8 @@ const SignUp = () => {
 
               {error && <p className="text-red-600">{error}</p>}
 
-                <button className="btn btn-neutral mt-3">Signup</button>
-                <button onClick={handleGoogleSignIn} type='button' className="btn"><FcGoogle size={30}/>Login with Google</button>
+                <button className="btn bg-[#422AD5] text-white hover:bg-purple-700 mt-3 rounded-2xl">Signup</button>
+                <button onClick={handleGoogleSignIn} type='button' className="btn rounded-2xl"><FcGoogle size={30}/>Login with Google</button>
 
               <h2 className="font-semibold pt-3">
                   Already Have An Account ?{" "}

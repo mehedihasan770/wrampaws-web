@@ -15,23 +15,24 @@ const MyProfile = () => {
     }
     return (
         <div>
-            <header>
+            <header className='sticky top-2 z-50'>
                 <Navbar></Navbar>
             </header>
-            <main className='max-w-screen flex justify-center items-center mt-10 min-h-screen'>
-                <div className='bg-fuchsia-100 p-20 rounded-lg flex justify-center items-center flex-col'>
-                    <div>
-                        <img className='rounded-full w-40 h-40' src={user?.photoURL} alt=""/>
-                    </div>
-                    <div>
-                        <h1 className='text-2xl font-bold text-center text-purple-800 py-2'>{user?.displayName}</h1>
-                        <h1 className='text-lg font-bold text-center text-gray-600'>{user?.email}</h1>
-                    </div>
-                    <div className='w-full'>
-                        <Link to={'/ProfileUpdate'}><button className='animate__animated animate__fadeInUp btn btn-primary mt-3 w-full'>Update Profile</button></Link>
-                    </div>
-                </div>
-            </main>
+            <main className="max-w-screen flex justify-center items-center mt-10 min-h-[88vh]">
+        <div className="shadow-lg rounded-3xl max-w-2xl mx-auto p-6 flex gap-6 hover:shadow-xl transition-shadow duration-300">
+          <img
+            src={user?.photoURL}
+            className="w-24 h-24 rounded-full"
+          />
+          <div className="flex-1">
+            <h2 className="text-2xl font-bold mb-1">{user?.displayName}</h2>
+            <p className="text-gray-600 mb-2">{user?.email}</p>
+            <Link to={'/ProfileUpdate'} className="bg-blue-600 text-white px-6 py-2 rounded-2xl hover:bg-purple-700">
+              Edit Profile
+            </Link>
+          </div>
+        </div>
+      </main>
             <footer>
                 <Footer></Footer>
             </footer>

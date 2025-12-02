@@ -6,7 +6,7 @@ import Footer from '../Components/Footer';
 const Auth = () => {
     return (
         <div>
-            <header>
+            <header className='sticky top-2 z-50'>
                 <Navbar></Navbar>
             </header>
             <main>

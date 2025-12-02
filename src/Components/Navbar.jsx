@@ -2,7 +2,7 @@ import React, { use } from "react";
 import { Link, NavLink } from "react-router";
 import { AuthContext } from "../AuthContext/AuthContext";
 import toast from "react-hot-toast";
-import logo from "../assets/Copilot_20251023_102940.png";
+import { MdPets } from "react-icons/md";
 import { MoonLoader } from "react-spinners";
 
 const Navbar = () => {
@@ -30,7 +30,8 @@ const Navbar = () => {
           Services
         </NavLink>
       </li>
-      <li>
+      
+      {user && <li>
         <NavLink
           className={({ isActive }) =>
             isActive ? "text-blue-700 font-bold" : "font-bold"
@@ -38,6 +39,16 @@ const Navbar = () => {
           to={"/myprofile"}
         >
           My Profile
+        </NavLink>
+      </li>}
+      <li>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "text-blue-700 font-bold" : "font-bold"
+          }
+          to={"/about-us"}
+        >
+          About Us
         </NavLink>
       </li>
     </>
@@ -54,8 +65,8 @@ const Navbar = () => {
   };
 
   return (
-    <div>
-      <div className="navbar bg-base-100 shadow-sm lg:px-20">
+    <div className="dark:bg-[#1D232A]">
+      <div className="navbar bg-[#EEF2FF] dark:bg-[#1E2939] max-w-10/12 mx-auto rounded-2xl shadow-sm mt-2">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -84,9 +95,9 @@ const Navbar = () => {
           </div>
           <div className="flex items-center">
             <div>
-              <img className="w-20 h-20" src={logo} alt="" />
+              
             </div>
-            <a className="text-xl -ml-3 font-bold">WarmPaws</a>
+            <a className="md:text-xl font-bold text-[#422AD5]"><MdPets className="inline-block -mt-1 mr-1 md:-mt-2"/>WarmPaws</a>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -112,17 +123,17 @@ const Navbar = () => {
                   <li className="text-nowrap">{user?.displayName}</li>
                 </ul>
               </div>
-              <button onClick={handleSignOut} className="btn btn-primary w-14 h-9 ml-2 md:w-25 md:h-10">
+              <button onClick={handleSignOut} className="btn rounded-2xl hover:bg-purple-700 btn-primary w-14 h-9 ml-2 md:w-25 md:h-10">
                 Logout
               </button>
             </div>
           ) : (
             <div>
               <Link to={"/auth/login"}>
-                <button className="btn btn-secondary w-14 h-9 ml-2 md:w-25 md:h-10">Login</button>
+                <button className="btn bg-[#422AD5] rounded-2xl text-white hover:bg-purple-700 w-14 h-9 ml-2 md:w-25 md:h-10">Login</button>
               </Link>
               <Link to={"/auth/signup"}>
-                <button className="btn btn-secondary w-14 h-9 ml-2 md:w-25 md:h-10">Signup</button>
+                <button className="btn bg-[#422AD5] rounded-2xl text-white hover:bg-purple-700 w-14 h-9 ml-2 md:w-25 md:h-10">Signup</button>
               </Link>
             </div>
           )}

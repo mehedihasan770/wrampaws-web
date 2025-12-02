@@ -31,7 +31,7 @@ const ProfileUpdate = () => {
     }
      return (
     <div>
-        <header>
+        <header className='sticky top-2 z-50'>
           <Navbar></Navbar>
         </header>
       <div className="flex flex-col justify-center items-center min-h-screen space-y-5">
@@ -47,7 +47,7 @@ const ProfileUpdate = () => {
               <label className="label">Photo URL</label>
               <input type="text" name="Photo" required className="input w-full" placeholder="New Photo URL" />
               {error && <p className="text-red-600">{error}</p>}
-              <button className="btn btn-neutral mt-4">Update Now</button>
+              <button className="btn bg-blue-600 text-white rounded-2xl mt-4 hover:bg-purple-700">Update Now</button>
             </fieldset>
           </form>
         </div>

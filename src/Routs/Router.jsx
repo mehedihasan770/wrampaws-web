@@ -10,6 +10,7 @@ import ProfileUpdate from "../Layouts/ProfileUpdate";
 import ForgetPass from "../Layouts/ForgetPass";
 import Services from "../Layouts/Services";
 import AppsNotFound from "../Pages/PageNotFound";
+import AboutUs from "../Components/AboutUs";
 
 export const router = createBrowserRouter([
     {
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
         element: <PrivetRouts><MyProfile></MyProfile></PrivetRouts>
     },
     {
+        path: '/about-us',
+        element: <AboutUs></AboutUs>
+    },
+    {
         path: '/services',
         element: <Services></Services>,
         loader: () => fetch('/data.json')
@@ -33,7 +38,7 @@ export const router = createBrowserRouter([
     },
     {
         path: '/Details/:id',
-        element: <PrivetRouts><Details></Details></PrivetRouts>,
+        element: <Details></Details>,
         loader: () => fetch('/data.json')
     },
     {

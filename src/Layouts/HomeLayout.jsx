@@ -9,6 +9,7 @@ import Reviews from '../Components/Reviews';
 import Footer from '../Components/Footer';
 import Loading from '../Components/Loading';
 import { useLoading } from '../Components/LoadingHok';
+import FooterTopSection from '../Components/FooterTopSection';
 
 const HomeLayout = () => {
     const {lod} = useLoading()
@@ -26,25 +27,24 @@ const HomeLayout = () => {
     
     return (
         <div>
-            <header>
+            <header className='sticky top-2 z-50'>
                 <Navbar></Navbar>
             </header>
-            <div className='px-3 md:px-0'>
+            <div className='px-3 max-w-10/12 mx-auto md:px-0'>
                 <HeroSwiper></HeroSwiper>
             </div>
-            <div className='max-w-11/12 mx-auto border-gray-300 border-b-2 mt-10 mb-5'></div>
-            <main className='max-w-11/12 mx-auto'>
-                <h1 className='text-center font-bold md:text-3xl'>Popular Winter Care Services</h1>
-                <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+            <main className='max-w-10/12 mx-auto'>
+                <h1 className='text-center font-bold md:text-3xl my-10'>Popular Winter Care Services</h1>
+                <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
                     {
-                        data.map(cats => <Cards key={cats.serviceId} cats={cats} ></Cards>)
+                        data?.slice(0, 4).map(cats => <Cards key={cats.serviceId} cats={cats} ></Cards>)
                     }
                 </section>
-                <div className=' border-gray-300 border-b-2 mt-10 mb-5'></div>
+                
                 <section className='space-x-10'>
                     <section className='flex-1 w-full'>
-                        <h1 className='text-center text-3xl font-bold mb-5'>Winter Care Tips for Pet</h1>
-                        <div className='grid lg:grid-cols-2 gap-2 md:gap-5'>
+                        <h1 className='text-center text-3xl font-bold my-10'>Winter Care Tips for Pet</h1>
+                        <div className='grid lg:grid-cols-3 gap-2 md:gap-5'>
                             {
                                 winterCare.map(care => <WinterCareTips key={care.id} care={care}></WinterCareTips>)
                             }
@@ -61,6 +61,9 @@ const HomeLayout = () => {
                 <div className=' border-gray-300 border-b-2 mt-10 mb-5'></div>
                 <section>
                     <Reviews></Reviews>
+                </section>
+                <section>
+                    <FooterTopSection></FooterTopSection>
                 </section>
             </main>
             <footer>
