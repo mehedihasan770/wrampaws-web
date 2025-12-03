@@ -10,13 +10,13 @@ const Cards = (cats) => {
   }, []);
   return (
     <div
-      className="p-5 shadow-2xl rounded-2xl space-y-3"
+      className="p-5 shadow-2xl rounded-2xl space-y-3 hover:shadow-lg transform hover:scale-102 transition-transform duration-1000 ease-in-out"
       data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"
     >
       <div className="overflow-hidden rounded-xl">
         <img
-          className="h-70 object-cover w-full"
+          className="h-70 object-cover w-full hover:scale-105 transition-transform duration-500 ease-in-out"
           src={cats?.cats?.image}
           alt=""
         />
@@ -45,7 +45,9 @@ const Cards = (cats) => {
       </div>
       <div>
         <Link to={`/Details/${cats?.cats?.serviceId}`}>
-          <button className="btn hover:bg-purple-700 btn-primary rounded-2xl w-full">View Details</button>
+          <button className="btn hover:bg-purple-700 btn-primary rounded-2xl w-full">
+            View Details
+          </button>
         </Link>
       </div>
     </div>
