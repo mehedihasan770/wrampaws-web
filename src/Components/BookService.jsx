@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import toast from "react-hot-toast";
 import "animate.css";
+import { AuthContext } from "../AuthContext/AuthContext";
 
 const BookService = () => {
+  const { user } = use(AuthContext);
   const [error, setError] = useState("");
   const handleBookNow = (e) => {
     e.preventDefault();
@@ -14,6 +16,8 @@ const BookService = () => {
     e.current.reset();
     toast.success("Book successful");
   };
+
+  if(!user) return
 
   return (
     <div className=" flex items-center justify-center">

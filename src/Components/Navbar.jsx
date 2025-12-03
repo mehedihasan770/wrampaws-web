@@ -12,9 +12,7 @@ const Navbar = () => {
     <>
       <li>
         <NavLink
-          className={({ isActive }) =>
-            isActive ? "text-blue-700 font-bold" : "font-bold"
-          }
+          className={({ isActive }) => `${isActive ? "text-white bg-[#422AD5]" : "text-blue-700"} border-2 rounded-2xl border-[#422AD5] font-bold ml-1 px-4 py-2 hover:bg-[#422AD5] hover:text-white transition-colors duration-300`}
           to={"/"}
         >
           Home
@@ -22,9 +20,7 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          className={({ isActive }) =>
-            isActive ? "text-blue-700 font-bold" : "font-bold"
-          }
+          className={({ isActive }) => `${isActive ? "text-white bg-[#422AD5]" : "text-blue-700"} border-2 rounded-2xl border-[#422AD5] font-bold ml-1 px-4 py-2 hover:bg-[#422AD5] hover:text-white transition-colors duration-300`}
           to={"/services"}
         >
           Services
@@ -33,9 +29,7 @@ const Navbar = () => {
       
       {user && <li>
         <NavLink
-          className={({ isActive }) =>
-            isActive ? "text-blue-700 font-bold" : "font-bold"
-          }
+          className={({ isActive }) => `${isActive ? "text-white bg-[#422AD5]" : "text-blue-700"} border-2 rounded-2xl border-[#422AD5] font-bold ml-1 px-4 py-2 hover:bg-[#422AD5] hover:text-white transition-colors duration-300`}
           to={"/myprofile"}
         >
           My Profile
@@ -43,9 +37,7 @@ const Navbar = () => {
       </li>}
       <li>
         <NavLink
-          className={({ isActive }) =>
-            isActive ? "text-blue-700 font-bold" : "font-bold"
-          }
+          className={({ isActive }) => `${isActive ? "text-white bg-[#422AD5]" : "text-blue-700"} border-2 rounded-2xl border-[#422AD5] font-bold ml-1 px-4 py-2 hover:bg-[#422AD5] hover:text-white transition-colors duration-300`}
           to={"/about-us"}
         >
           About Us
@@ -97,7 +89,7 @@ const Navbar = () => {
             <div>
               
             </div>
-            <a className="md:text-xl font-bold text-[#422AD5]"><MdPets className="inline-block -mt-1 mr-1 md:-mt-2"/>WarmPaws</a>
+            <a className="md:text-xl font-bold text-[#422AD5]"><MdPets ml-1 className="inline-block -mt-1 mr-1 md:-mt-2"/>WarmPaws</a>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
